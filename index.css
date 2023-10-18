@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@500&display=swap');
+
+html{
+    background-color: #e3e3e3;
+    font-family: 'Gabarito', sans-serif;
+}
+
+.big-container {
+    height: 98vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.header {
+    background-color: #f4f4f4;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 10px; /* Added a margin below the header for spacing */
+    flex-shrink: 0; /* Ensures the header doesn't shrink */
+}
+
+h1 {
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
+.main-container {
+    width: auto;
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    flex-grow: 1; /* This allows the main-container to take up any remaining space */
+}
+
+
+.left-side-container {
+min-width: 600px;
+}
+
+.input-area {
+    height: 100%;
+    display: flex; /* Added to make it a flex container */
+
+    width: 100%; 
+
+    gap: 20px;
+    justify-content: left;
+
+}
+
+
+.codec-section {
+    width: 40%; 
+    
+   background-color: #f4f4f4;
+   border-radius: 15px;
+   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.05); /* Added a soft shadow */
+   padding: 20px; /* Added padding for inner spacing */ 
+   display: flex;
+   flex-direction: column;
+}
+
+.codec-section h2 {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 10px;
+}
+
+.codec-section input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px; /* Added border-radius */
+}
+
+.add-button {
+    width: auto; /* Changed from full width */
+    padding: 10px 20px; /* Added padding to sides */
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px; /* Added border-radius */
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.add-button:hover {
+    background-color: #0056b3;
+}
+
+.codec-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    overflow: scroll;
+    height: 20vh;
+    flex-grow: 1;
+
+}
+
+.codecs-section-list {
+    scrollbar-width: none; /* Firefox 64+ */
+    -ms-overflow-style: none; 
+}
+
+.codecs-section-list::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
+
+
+.codec-section li {
+    display: flex; /* Make the list item a flex container */
+    justify-content: space-between; /* Position child elements on opposite ends */
+    align-items: center; /* Vertically center align child elements */
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+    border-radius: 5px;
+}
+
+.remove-button {
+    background-color: #de5959;  /* Red background */
+    color: #fff;
+    width: 30px; /* Adjust width to make it small */
+    height: 30px; /* Adjust height to match width */
+    border-radius: 5px; /* Make it a circle */
+    padding: 0; /* Remove padding */
+    margin-left: 10px; /* Add some margin to separate from codec text */
+    font-size: 16px; /* Adjust font size */
+    line-height: 30px; /* Center the '-' vertically */
+    text-align: center; /* Center the '-' horizontally */
+}
+
+.remove-button:hover {
+    background-color: #e02020; /* Slightly darker shade of red for hover effect */
+}
+
+.right-side-container {
+    flex: 1; /* Take up equal width as left side */
+    padding: 20px; /* Added padding for inner spacing */
+    background-color: #f4f4f4;
+    border-radius: 15px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.05); /* Added a soft shadow */
+    min-height: 250px;
+}
+
+
+.get-results-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #007BFF;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.results-area {
+    padding: 20px;
+    height: 30vh;
+    border: 1px solid #bdbdbd;
+ 
+    overflow: scroll;
+    border-radius: 5px;
+
+    scrollbar-width: none; /* Firefox 64+ */
+    -ms-overflow-style: none; 
+
+}
+
+h3 {
+    padding: 0;
+}
+
+.results-area::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
+
+.results-area p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
