@@ -111,8 +111,6 @@ min-width: 600px;
     background: transparent; /* make scrollbar transparent */
 }
 
-
-
 .codec-section li {
     display: flex; /* Make the list item a flex container */
     justify-content: space-between; /* Position child elements on opposite ends */
@@ -133,6 +131,8 @@ min-width: 600px;
     font-size: 16px; /* Adjust font size */
     line-height: 30px; /* Center the '-' vertically */
     text-align: center; /* Center the '-' horizontally */
+    border: 0;
+    text-align: 0;
 }
 
 .remove-button:hover {
